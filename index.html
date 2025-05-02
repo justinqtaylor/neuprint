@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroAge Neuprint™ Health Coaching - Sign Up Today</title>
+    <title>NeuroAge Neuprint™ - Brain Health Program</title>
     <style>
         :root {
             --primary: #254d10;
@@ -156,6 +156,8 @@
             padding: 1.5rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
+            position: relative;
+            cursor: pointer;
         }
         
         .pillar-card:hover {
@@ -163,10 +165,25 @@
             border-top: 3px solid var(--accent);
         }
         
+        .pillar-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 1;
+        }
+        
         .pillar-icon {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             color: var(--secondary);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0;
         }
         
         .form-container {
@@ -200,68 +217,12 @@
             height: 100px;
         }
         
-        .testimonial {
-            font-style: italic;
-            padding: 1.5rem;
-            background-color: var(--light);
-            border-left: 4px solid var(--primary);
-            margin: 1.5rem 0;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            text-align: right;
-            margin-top: 1rem;
-        }
-        
         footer {
             background-color: var(--dark);
             color: white;
             text-align: center;
             padding: 2rem 1rem;
             margin-top: 3rem;
-        }
-        
-        .expert-profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background-color: var(--light);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        .expert-profile:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            border-bottom: 3px solid var(--accent);
-        }
-        
-        .expert-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            border: 3px solid var(--primary);
-        }
-        
-        .two-column {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .two-column {
-                grid-template-columns: 1fr;
-            }
-            
-            .pillars {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -270,107 +231,91 @@
         <div class="container">
             <img src="NeuroAge_white.png" alt="NeuroAge Logo" class="logo">
             <h1>NeuroAge Neuprint™</h1>
-            <p>Transform Your Brain Health with Personalized Coaching</p>
+            <p>The 9 Pillars of Healthy Brain Aging</p>
         </div>
     </header>
     
     <div class="container">
         <section class="hero">
-            <h2>Take Control of Your Brain Health Today</h2>
-            <p>Ready to optimize your brain health and slow aging? Our expert coaches will guide you through the proven 9-pillar Neuprint™ protocol to help you achieve lasting cognitive wellness.</p>
+            <h2>Your Path to Optimal Brain Health</h2>
+            <p>The 9 pillars of the NeuroAge Neuprint™ protocol provide a comprehensive approach to maintaining and enhancing your cognitive wellness as you age. Each pillar represents a critical aspect of brain health backed by scientific research.</p>
             <a href="#signup" class="btn">Sign Up Now</a>
         </section>
         
         <section class="feature-box">
-            <h2>The NeuroAge Difference</h2>
-            <p>At NeuroAge, we believe in a comprehensive, science-backed approach to brain health. Our Neuprint™ protocol addresses all aspects of cognitive wellness through our 9 essential pillars.</p>
+            <h2>The 9 Pillars of Brain Health</h2>
+            <p>Our research-backed protocol addresses all aspects of cognitive wellness through these 9 essential pillars. Click on each pillar to learn more about specific recommendations and their benefits for your brain.</p>
             
             <div class="pillars">
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#diet" class="pillar-link" aria-label="Learn more about Diet"></a>
                     <div class="pillar-icon">🥗</div>
-                    <h3>Diet</h3>
-                    <p>Optimize your nutrition with Mediterranean diet principles, rich in brain-boosting nutrients and antioxidants.</p>
+                    <h3>1. Diet</h3>
+                    <p>Optimize your nutrition with Mediterranean diet principles, rich in brain-boosting nutrients and antioxidants to support cognitive function.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#exercise" class="pillar-link" aria-label="Learn more about Exercise"></a>
                     <div class="pillar-icon">🏃‍♀️</div>
-                    <h3>Exercise</h3>
-                    <p>Discover the perfect balance of cardio, resistance training, and flexibility exercises to enhance brain function.</p>
+                    <h3>2. Exercise</h3>
+                    <p>Discover the perfect balance of cardio, resistance training, and flexibility exercises to enhance brain function and neuroplasticity.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#sleep" class="pillar-link" aria-label="Learn more about Sleep"></a>
                     <div class="pillar-icon">😴</div>
-                    <h3>Sleep</h3>
-                    <p>Develop healthy sleep habits to ensure your brain gets the rest it needs for optimal cognitive performance.</p>
+                    <h3>3. Sleep</h3>
+                    <p>Learn how quality sleep for 7-9 hours per night strengthens memory and removes toxins from your brain to support optimal cognitive performance.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#community" class="pillar-link" aria-label="Learn more about Community"></a>
                     <div class="pillar-icon">👫</div>
-                    <h3>Community</h3>
-                    <p>Build and nurture social connections that support brain health and overall well-being.</p>
+                    <h3>4. Community</h3>
+                    <p>Build and nurture social connections that support brain health and protect against isolation, which is a risk factor for cognitive decline.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#mental-activity" class="pillar-link" aria-label="Learn more about Mental Activity"></a>
                     <div class="pillar-icon">🧠</div>
-                    <h3>Mental Activity</h3>
-                    <p>Keep your mind sharp with engaging activities that challenge and stimulate cognitive function.</p>
+                    <h3>5. Mental Activity</h3>
+                    <p>Keep your mind sharp with engaging activities that challenge and stimulate cognitive function through continuous learning and mental stimulation.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#stress" class="pillar-link" aria-label="Learn more about Lowering Stress"></a>
                     <div class="pillar-icon">🧘‍♀️</div>
-                    <h3>Stress Management</h3>
-                    <p>Learn effective techniques to reduce stress and protect your brain from cortisol damage.</p>
+                    <h3>6. Lowering Stress</h3>
+                    <p>Learn effective techniques to reduce stress and protect your brain from cortisol damage, which can shrink neurons and impair cognitive function.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#general-health" class="pillar-link" aria-label="Learn more about General Health"></a>
                     <div class="pillar-icon">❤️</div>
-                    <h3>General Health</h3>
-                    <p>Address cardiovascular and metabolic health factors that directly impact brain function.</p>
+                    <h3>7. General Health</h3>
+                    <p>Address cardiovascular and metabolic health factors that directly impact brain function and increase risk for cognitive decline and dementia.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#mental-health" class="pillar-link" aria-label="Learn more about Mental Health"></a>
                     <div class="pillar-icon">🌈</div>
-                    <h3>Mental Health</h3>
-                    <p>Support your psychological well-being as a foundation for optimal brain health.</p>
+                    <h3>8. Mental Health</h3>
+                    <p>Support your psychological well-being as a foundation for optimal brain health, as mental health conditions can accelerate brain aging.</p>
                 </div>
                 
                 <div class="pillar-card">
+                    <a href="neuroage-detailed-page.html#environmental-toxins" class="pillar-link" aria-label="Learn more about Environmental Factors"></a>
                     <div class="pillar-icon">🌱</div>
-                    <h3>Environmental Factors</h3>
-                    <p>Minimize exposure to toxins and pollutants that can accelerate brain aging.</p>
+                    <h3>9. Environmental Factors</h3>
+                    <p>Minimize exposure to toxins and pollutants that can accelerate brain aging, including pesticides, air pollution, and microplastics.</p>
                 </div>
             </div>
         </section>
         
-        <section class="two-column">
-            <div class="expert-profile">
-                <img src="christinapeterson.jpeg" alt="Christina Peterson" class="expert-image">
-                <h3>Christina Peterson, LICSW</h3>
-                <p>As your dedicated health coach, Christina will help you develop personalized strategies to implement the 9 pillars into your daily life. With years of experience as a mental health professional, she excels at helping clients set achievable goals and build sustainable healthy habits.</p>
-            </div>
-            
-            <div class="expert-profile">
-                <img src="drchristinglorioso.jpeg" alt="Dr. Christin Glorioso" class="expert-image">
-                <h3>Dr. Christin Glorioso, MD/PhD</h3>
-                <p>Access supplementary consultations with Dr. Glorioso, a physician-scientist specializing in brain health. Dr. Glorioso can answer your specific questions about health interventions and provide expert guidance tailored to your unique situation.</p>
-            </div>
-        </section>
-        
-        <section class="feature-box">
-            <h2>What You'll Get</h2>
-            <ul>
-                <li>Personalized coaching sessions with Christina Peterson, LICSW</li>
-                <li>Customized implementation of the 9-pillar Neuprint™ protocol</li>
-                <li>Goal-setting support and accountability check-ins</li>
-                <li>Access to supplementary consultations with Dr. Christin Glorioso</li>
-                <li>Science-backed strategies for optimizing brain health</li>
-                <li>Ongoing support for sustainable lifestyle changes</li>
-            </ul>
-        </section>
-        
-        <section class="testimonial">
-            <p>"The NeuroAge coaching program transformed my approach to health. Working with Christina helped me implement practical changes that have improved my sleep, reduced my stress, and increased my mental clarity. The personalized guidance made all the difference."</p>
-            <div class="testimonial-author">- Sarah M., NeuroAge Client</div>
+        <section class="cta-section">
+            <h2>Ready to Optimize Your Brain Health?</h2>
+            <p>Our personalized coaching program helps you implement these 9 pillars in your daily life, with expert guidance from mental health professionals and brain health specialists.</p>
+            <a href="#signup" class="btn">Sign Up Now</a>
         </section>
         
         <section class="form-container" id="signup">
@@ -413,22 +358,6 @@
                 
                 <button type="submit" class="btn">Sign Up Now</button>
             </form>
-        </section>
-        
-        <section class="feature-box">
-            <h2>Frequently Asked Questions</h2>
-            
-            <h3>How are sessions conducted?</h3>
-            <p>Coaching sessions are available both virtually and in-person, depending on your location and preferences.</p>
-            
-            <h3>How long is each coaching session?</h3>
-            <p>Standard coaching sessions with Christina are 50 minutes, while consultations with Dr. Glorioso are 30 minutes.</p>
-            
-            <h3>Is this covered by insurance?</h3>
-            <p>While our coaching services are not typically covered by insurance, we can provide documentation that you may submit to your insurance provider or FSA/HSA for potential reimbursement.</p>
-            
-            <h3>How quickly will I see results?</h3>
-            <p>Many clients report improvements in energy, sleep quality, and mental clarity within the first month. Long-term brain health benefits build over time with consistent implementation of the 9-pillar approach.</p>
         </section>
     </div>
     

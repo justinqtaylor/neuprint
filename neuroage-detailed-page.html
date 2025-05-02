@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAge Neuprint™ - 9 Pillars of Brain Health</title>
+    <style>
+        :root {
+            --primary: #254d10;
+            --secondary: #598D25;
+            --accent: #e80057;
+            --light: #f1f7f0;
+            --dark: #052b00;
+            --success: #598D25;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        header h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .logo {
+            display: block;
+            width: 200px;
+            margin: 0 auto 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .content {
+            background-color: white;
+            border-radius: 8px;
+            padding: 3rem;
+            margin-top: -3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .intro {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            scroll-margin-top: 80px;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.5rem;
+            color: var(--dark);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #d5004e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-secondary {
+            background-color: var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .pillar-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pillar-section:last-child {
+            border-bottom: none;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .home-link:hover {
+            color: var(--accent);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="NeuroAge_white.png" alt="NeuroAge Logo" class="logo">
+            <h1>NeuroAge Neuprint™</h1>
+            <p>The 9 Pillars of Slowing Your Brain Aging</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <a href="index.html" class="home-link">← Back to Main Page</a>
+            
+            <div class="intro">
+                <p>The 9 pillars of slowing your brain aging are 1. diet 2. exercise 3. sleep 4. community 5. staying mentally active and 6. lowering stress 7. taking care of your general health 8. Taking care of your mental health and 9. avoiding environmental toxins</p>
+            </div>
+            
+            <div class="pillar-section" id="diet">
+                <h2>1. Diet</h2>
+                <ol type="a">
+                    <li>
+                        <strong>How many calories should you eat?</strong> 
+                        <p>Eat the right amount of calories to maintain a BMI of 20-26 (possibly higher if you have a lot of muscle, but this is a good first approximation). Why not a BMI of 18-24? I will get into more detail in another post but BMIs that are lower than 20 are associated with shorter lifespan in old age.</p>
+                    </li>
+                    <li>
+                        <strong>Should I intermittent fast?</strong> 
+                        <p>We need more data on this but my read so far is that you should fast for less than 24 hrs at a time (16/8 for instance) <em>if</em> it helps you to consume the right amount of calories to maintain a healthy BMI. Fasting does not appear to be better for you than simply eating less calories throughout the day. Fasting for periods of time longer than 24 hrs may result in muscle loss and slowing of your metabolism.</p>
+                    </li>
+                    <li>
+                        <strong>What should I eat?</strong> 
+                        <p>There is good evidence for a mediterranean diet.</p>
+                        <ol type="i">
+                            <li>
+                                <strong>Foods to consume more of:</strong>
+                                <ul>
+                                    <li>Vegetables (leafy greens, broccoli, tomatoes, zucchini, eggplant, carrots, mushrooms, onions, garlic). Eat at least one salad bowl full of vegetables daily.</li>
+                                    <li>Berries (for the flavonoids). Consume >1/2 cup of berries daily. The best berries for you are blueberries, black berries, and raspberries.</li>
+                                    <li>Foods high in Omega-3s (fatty fish, shellfish, walnuts, flaxseed, canola oil). Omega-3 supplements or high dietary intake can lower dementia risk by ~20%. Omega-3 from diet may be better than from a supplement.</li>
+                                    <li>Olive oil (for the polyphenols and unsaturated fat). Consume at least 1tbs daily.</li>
+                                    <li>Coffee and Tea (green/white> black)- not for the caffeine but for the flavonoids and other compounds found in the beans and leaves.</li>
+                                    <li>Lean protein- beans, fish, shellfish, eggs, chicken, soy, plain yoghurt. Consume at least 0.8g of protein per kilogram of body weight daily or approximately 56 grams for men and 46 grams for women.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Foods to consume less of:</strong>
+                                <ul>
+                                    <li>Highly processed foods- white flour foods (bread, pasta), packaged, canned, and frozen food dinners, chips and similar snacks, desserts, candies. Basically, if it has a longer shelf life than if you made it at home, you probably don't want to eat it.</li>
+                                    <li>Red meat- red meat is associated with a longer lifespan if consumed up to 1x/week. After that, it's associated with shorter lifespan.</li>
+                                    <li>Deep fried food and animal fat (butter, cream, cheese, and lard) (because of the saturated fat).</li>
+                                    <li>Food with added sugar- soft drinks, desserts, sweet coffee drinks.</li>
+                                    <li>Alcohol- there is a debate about whether low amounts of alcohol are good or bad for you. My read and many guidelines state that <7-14 drinks per week is probably neutral. More than 14 drinks per week is definitely bad for your brain health. I would suggest that if you drink, have it predominantly be red wine for the flavonoid upside.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="pillar-section" id="exercise">
+                <h2>2. Exercise</h2>
+                <p>Exercise for 30-90 minutes, 5-7x/week</p>
+                <ol type="a">
+                    <li>
+                        <strong>Cardio:</strong>
+                        <ol type="i">
+                            <li>Walk or run an average of 6,000-10,000 steps/day (about 4 miles). If you can't walk or run that far due to injury or disability, you can substitute for another type of cardio, such as swimming or biking. The goal is to get your heart rate up above 100 bpm.</li>
+                            <li>Engage in an activity that increases your heart rate above 130 bpm (Zone 3 and above) for at least an hour/week.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Resistance training:</strong> lift weights, perform weight bearing exercises (pushups, pull-ups, squats), or HIIT 2-4x/week for 20-60 minutes.
+                    </li>
+                    <li>
+                        <strong>Hot Yoga:</strong> I recommend hot yoga 3x/week. It has many benefits in one class:
+                        <ol>
+                            <li>Cardio - increases heart rate into zone 2/3 for part of the class</li>
+                            <li>Sauna - the heat has the benefits of sauna</li>
+                            <li>Resistance training - pushups, squats, lunges, and sit-ups are part of the class</li>
+                            <li>Flexibility and balance - important as you age</li>
+                            <li>Meditation - a 5 minute meditation is at the end of each class</li>
+                            <li>Community - the people have good vibes</li>
+                        </ol>
+                        <p>If hot yoga is too intense for you, Tai Chi or a nice stretching and balancing routine is also beneficial.</p>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="pillar-section" id="community">
+                <h2>3. Community</h2>
+                <p>Time spent in community with friends and family is very beneficial to your brain health. Loneliness is a predictor of dementia risk and mortality risk. I recommend at least an hour a day of quality time with a partner, friends, or family. If you are low on friends and family to spend time with, you can increase your social circle by joining a club, volunteering, or adopting a new hobby.</p>
+            </div>
+            
+            <div class="pillar-section" id="mental-activity">
+                <h2>4. Staying Mentally Active</h2>
+                <p>Use it or lose it. Staying mentally active is good for your brain health and can help delay or prevent dementia. I suggest spending at least 1 hr/day doing something mentally challenging. This could be work, if your job is mentally stimulating, puzzles/games, or a hobby.</p>
+            </div>
+            
+            <div class="pillar-section" id="stress">
+                <h2>5. Lowering Stress</h2>
+                <p>Cortisol, the stress hormone, is bad for your brain health. It can cause your neurons to shrink and the connections between them to retract. You can test your blood levels of cortisol at Quest diagnostics or track it indirectly through HRV and resilience scores on your wearable such as Oura.</p>
+                <p>Some ideas for lowering stress are:</p>
+                <ol>
+                    <li>Time management and not taking on too many things</li>
+                    <li>Meditation</li>
+                    <li>Being selective about and working on your relationships</li>
+                    <li>Therapy/coaching</li>
+                    <li>Deep breathing exercises</li>
+                    <li>Taking frequent breaks throughout the day</li>
+                    <li>Exercising</li>
+                    <li>Journaling</li>
+                    <li>Hot sauna</li>
+                    <li>Being in nature</li>
+                </ol>
+                <p>Polyphenols found in coffee and moderate amounts of red wine might also be good for reducing stress and improving mood. Figure out what works for you and make it a priority in your life.</p>
+            </div>
+            
+            <div class="pillar-section" id="sleep">
+                <h2>6. Sleep</h2>
+                <p>Sleeping between 7-9 hrs per night is very important for brain health. It strengthens your memory and removes toxins from your brain. I suggest tracking your sleep (I love my Oura ring, not paid to say this) and working on factors that might be contributing to poor sleep if you experience it.</p>
+                <p>Stress can affect sleep as can sleeping conditions such as lighting and temperature. If you are a woman 38-50 years old, consider that perimenopause might be affecting your sleep. Hormone replacement therapy (HRT) might be a good option--- it fixed my sleep.</p>
+                <p>Magnesium Threonate and melatonin taken before bed may also be helpful for sleep.</p>
+            </div>
+            
+            <div class="pillar-section" id="general-health">
+                <h2>7. Taking Care of Your General Health</h2>
+                <p>Heart and metabolic health are particularly important for brain health. Stroke and vascular dementia are both cardiovascular issues that happen in the brain and are common causes of cognitive decline. Work with your doctor to ensure that your blood pressure, lipids, cholesterol, and fasting glucose are all in the optimal ranges.</p>
+                <p>Consider a CGM or continual blood pressure monitoring to ensure that you are in the optimal range. Consider a cardiac calcium score and/or cardiac CT like Cleerly to investigate your plaque build up in your arteries.</p>
+                <p>Consider GLP1RAs (Ozempic, Wegovy) if you are overweight, pre-diabetic, or diabetic. GLP1RAs may have additional benefits for preventing Alzheimer's and other forms of dementia even beyond helping with weight loss and diabetes. We may see normal weight and non-diabetic folks microdosing these drugs for cognitive health in the future. Statins also have evidence for preventing dementia.</p>
+                <p><strong>Get vaccinated</strong>- becoming infected with COVID-19 is detrimental to brain health and causes loss of grey matter volume and demyelination of your neurons so I suggest staying up to date on your vaccinations. There is also some emerging evidence that getting the Shingles vaccine is associated with less dementia risk.</p>
+            </div>
+            
+            <div class="pillar-section" id="mental-health">
+                <h2>8. Taking Care of Your Mental Health</h2>
+                <p>Mental health conditions, such as depression, have been associated with accelerated brain aging. Depression, anxiety, ADHD and other conditions can also make optimizing the other pillars harder. Work with your doctor, a trained therapist, and/or psychiatrist to treat any mental health issues that affect you.</p>
+            </div>
+            
+            <div class="pillar-section" id="environmental-toxins">
+                <h2>9. Avoiding Environmental Toxins</h2>
+                <p><strong>Pesticides and air pollution</strong> are both associated with increased risk of neurodegenerative diseases. If you live in a place with poor air quality consider filtering your air in your home or moving.</p>
+                <p>Wash all of your produce thoroughly to remove any residual pesticides. If you live on a farm or have a garden, investigate the pesticides being used and consider switching to non-toxic versions. Test your garden soil and make sure it is free of heavy metals and contaminants. Parkinson's disease in particular has a well known relationship to pesticide exposure.</p>
+                <p><strong>Microplastics</strong>- There is emerging evidence that microplastics build up in the brain and are associated with greater risk of Alzheimer's disease. Store food in non-plastic containers such as glass or silicon and avoid microwave dinners that come in plastic packaging. Use pans without non-stick coating such as ceramic, stainless steel, or cast iron. Drink from metal or glass containers and filter your water. Buy produce that has not been stored in plastic packaging if possible such as from a farmer's market or farm.</p>
+            </div>
+            
+            <a href="#" class="back-to-top">↑</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NeuroAge. All rights reserved.</p>
+            <p>The Neuprint™ protocol is a registered trademark of NeuroAge.</p>
+            <p><small>This program is designed to support brain health and is not intended to diagnose, treat, cure, or prevent any disease. Always consult with your healthcare provider before starting any new health program.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
