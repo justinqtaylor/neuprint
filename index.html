@@ -224,14 +224,82 @@
             padding: 2rem 1rem;
             margin-top: 3rem;
         }
+
+  .expert-team {
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .expert-team h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .two-column {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .expert-profile {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .expert-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .expert-profile h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .two-column {
+      flex-direction: column;
+    }
+  }
     </style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pkgSelect = document.getElementById('package');
+      const nextInput = document.getElementById('nextUrl');
+  
+      // map each package value → the thank‑you page you want
+      const redirectMap = {
+        intro:  'https://buy.stripe.com/28ofZ65JA8T23q814l',
+        starter:  'https://buy.stripe.com/6oE4go9ZQc5egcU5kD',
+        standard: 'https://buy.stripe.com/9AQ8wE1tkfhqf8Q7sM',
+        premium:  'https://buy.stripe.com/28o0082xoc5e6Ck14p'
+      };
+  
+      pkgSelect.addEventListener('change', () => {
+        const choice = pkgSelect.value;
+        // look up URL or clear if no match
+        nextInput.value = redirectMap[choice] || '';
+      });
+    });
+  </script>  
 </head>
 <body>
     <header>
         <div class="container">
             <img src="NeuroAge_white.png" alt="NeuroAge Logo" class="logo">
             <h1>NeuroAge Neuprint™</h1>
-            <p>The 9 Pillars of Healthy Brain Aging</p>
+            <p>Personalized coaching to pursue the 9 Pillars of Healthy Brain Aging</p>
         </div>
     </header>
     
@@ -312,6 +380,29 @@
             </div>
         </section>
         
+        <section class="expert-team">
+            <h2>Our Expert Team</h2>
+            
+            <div class="two-column">
+              <div class="expert-profile">
+                <div class="image-container">
+                  <img src="christinapeterson.jpeg" alt="Christina Peterson" class="expert-image">
+                </div>
+                <h3>Christina Peterson, LICSW</h3>
+                <p>As your dedicated health coach, Christina will help you develop personalized strategies to implement the 9 pillars into your daily life. With years of experience as a mental health professional, she excels at helping clients set achievable goals and build sustainable healthy habits. Christina has an MSW and a degree in Brain and Cognitive Science from MIT.</p>
+              </div>
+              
+              <div class="expert-profile">
+                <div class="image-container">
+                  <img src="drchristinglorioso.jpeg" alt="Dr. Christin Glorioso" class="expert-image">
+                </div>
+                <h3>Dr. Christin Glorioso, MD/PhD</h3>
+                <p>Access supplementary consultations with Dr. Glorioso, a physician-scientist specializing in brain health. Dr. Glorioso can answer your specific questions about health interventions and provide expert guidance tailored to your unique situation. Christin has an MD, a PhD, and a long research history as a scientist at MIT.</p>
+              </div>
+            </div>
+          </section>
+          
+
         <section class="cta-section">
             <h2>Ready to Optimize Your Brain Health?</h2>
             <p>Our personalized coaching program helps you implement these 9 pillars in your daily life, with expert guidance from mental health professionals and brain health specialists.</p>
@@ -329,6 +420,7 @@
                 <div class="form-group">
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" required>
+                    <input type="hidden" name="_next" id="nextUrl" value="https://buy.stripe.com/28ofZ65JA8T23q814l">
                 </div>
                 
                 <div class="form-group">
@@ -350,9 +442,10 @@
                     <label for="package">Select Package</label>
                     <select id="package" name="package" required>
                         <option value="">-- Select an Option --</option>
-                        <option value="starter">Starter Package - 4 Sessions</option>
-                        <option value="standard">Standard Package - 8 Sessions</option>
-                        <option value="premium">Premium Package - 12 Sessions with 2 Dr. Glorioso Consultations</option>
+                        <option value="intro">Intro Package - Single Session $280</option>
+                        <option value="starter">Starter Package - 4 Sessions $999</option>
+                        <option value="standard">Standard Package - 8 Sessions $1850</option>
+                        <option value="premium">Premium Package - 12 Sessions + 2 Dr. Glorioso Consultations $3300</option>
                     </select>
                 </div>
                 
